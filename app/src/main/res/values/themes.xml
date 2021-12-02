@@ -12,5 +12,24 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="materialButtonStyle">@style/MyButtonTextSize</item>
     </style>
+
+    <style name="ButtonTopMargin">
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="MyButtonTextSize" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="tv" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@color/text_view</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
